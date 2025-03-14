@@ -7,3 +7,41 @@
 img {
     width: 100%;
 }
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkblue;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    background-color: white;
+    width: 1000px;
+    padding: 20px;
+}
+
+article {
+    background-color: lightblue;
+    grid-column: span 3;
+    min-height: 300px;
+}
+
+.small {
+    grid-column: span 3;
+}
+
+.medium {    
+    grid-column: span 4;
+}
+
+.large {    
+    grid-column: span 6;
+}
+
+.xlarge {
+    grid-column: span 12;
+}
