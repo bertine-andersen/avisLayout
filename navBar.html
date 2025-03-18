@@ -32,6 +32,15 @@
             height: 70px;
             padding-left: 20px;
             padding-right: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        nav div {
+            display: flex;
+            width: 50%;
         }
 
         a:hover {
@@ -56,22 +65,49 @@
             align-items: center;
             gap: 10px;
         }
+
+        .typer {
+            display: flex;
+            justify-content: flex-start;
+            gap: 8%;
+        }
+
+        .typer {
+            display: flex;
+            justify-content: flex-start;
+            gap: 8%;
+        }
+
+        .søk {
+            background-color: var(--ui-02-c);
+            height: 48px;
+            justify-content: space-between;
+            position: relative;
+            gap: 16px;
+            padding: 0 16px;
+        }
     </style>
 </head>
 
 <body>
     <nav>
-        <h2><a href=""></a>HP</h2>
-        <h1><a href="">AI</a></h1>
-        <h1><a href="">Tech</a></h1>
-        <h1><a href="">Tips oss</a></h1>
+        <div class="typer">
+            <h2><a href=""></a>HP</h2>
+            <h1><a href="">AI</a></h1>
+            <h1><a href="">Tech</a></h1>
+            <h1><a href="">Tips oss</a></h1>
+        </div>
 
-
-        <button>Abboner</button>
-        <button>Logg inn</button>
-        <div class="meny">
-            <i class="fa-solid fa-bars"></i>
-            <h1>Meny</h1>
+        <div class="diverse">
+            <button>Abboner</button>
+            <button>Logg inn</button>
+            <div class="søk">
+                <input placeholder="Søk.." type="search" value>
+            </div>
+            <div class="meny">
+                <i class="fa-solid fa-bars"></i>
+                <h1>Meny</h1>
+            </div>
         </div>
 
     </nav>
