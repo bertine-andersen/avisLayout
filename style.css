@@ -8,6 +8,9 @@
     width: 1000px;  
     overflow-x: auto;  
     white-space: nowrap; 
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    
 }
 
 #articles-list {
