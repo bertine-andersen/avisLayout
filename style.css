@@ -23,7 +23,7 @@ body {
     padding: 20px;
 }
 
-article {
+article, .article {
     background-color: lightblue;
     grid-column: span 3;
     min-height: 300px;
