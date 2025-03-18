@@ -4,6 +4,29 @@
     box-sizing: border-box;
 }
 
+.articles-container {
+    width: 1000px;  
+    overflow-x: auto;  
+    white-space: nowrap; 
+}
+
+#articles-list {
+    display: flex; 
+    gap: 20px;
+}
+
+.article {
+    width: 300px;
+    height: 400px; 
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-shrink: 0; 
+    overflow: hidden;
+}
+
 img {
     width: 100%;
 }
@@ -23,7 +46,7 @@ body {
     padding: 20px;
 }
 
-article {
+article, .article {
     background-color: lightblue;
     grid-column: span 3;
     min-height: 300px;
