@@ -7,6 +7,7 @@ async function fetchArticles() {
             'api-key': apiKey,
             'section': 'technology', 
             'page-size': 5, 
+            'show-fields': 'thumbnail'
         });
 
         const response = await fetch(`${endpoint}?${params}`);
@@ -30,18 +31,22 @@ async function fetchArticles() {
 }
 
 function displayArticles(articles) {
-    const articlesList = document.getElementById('container');
+    const articlesList = document.getElementById('articles-list');
 
     
 
     articles.forEach(article => {
         const articleDiv = document.createElement('div');
         articleDiv.classList.add('article'); 
+        const imageUrl = article.fields?.thumbnail || 'https://via.placeholder.com/300';
         
         articleDiv.innerHTML = `
+            <img src="${imageUrl}" alt="Article Image" class="article-image">
             <h2><a href="${article.webUrl}" target="_blank">${article.webTitle}</a></h2>
             <p>Published on: ${new Date(article.webPublicationDate).toLocaleDateString()}</p>
+            
         `;
+        
         
 
         articlesList.appendChild(articleDiv);
