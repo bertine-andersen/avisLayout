@@ -1,12 +1,15 @@
 const apiKey = 'c31f7ad4-e7f2-4d0d-8a26-24f0a1b8e89f'; 
 const endpoint = 'https://content.guardianapis.com/search';
 
+const articlesContainer = document.querySelector('.articles-container');
+
+
 async function fetchArticles() {
     try {
         const params = new URLSearchParams({
             'api-key': apiKey,
             'section': 'technology', 
-            'page-size': 5, 
+            'page-size': 1, 
             'show-fields': 'thumbnail'
         });
 
@@ -53,4 +56,19 @@ function displayArticles(articles) {
     });
 }
 
-fetchArticles();
+articlesContainer.addEventListener('scroll', () => {
+    const scrollLeft = articlesContainer.scrollLeft;
+    const maxScrollLeft = articlesContainer.scrollWidth - articlesContainer.clientWidth; 
+    const scrollPercentage = (scrollLeft / maxScrollLeft) * 100; 
+
+    console.log('Scroll Percentage:', scrollPercentage);
+
+    if (scrollPercentage === 100) {
+        fetchArticles();
+    }
+});
+
+
+for (let i = 0; i < 5; i++) {
+    fetchArticles();
+}
