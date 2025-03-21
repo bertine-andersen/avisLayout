@@ -5,7 +5,7 @@
 }
 
 .articles-container {
-    width: 1000px;  
+    /* width: 1000px; */
     overflow-x: auto;  
     white-space: nowrap; 
     scrollbar-width: none;
@@ -36,9 +36,15 @@ img {
 
 body {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     background-color: whitesmoke;
+}
+
+main {
+    max-width: 1000px;
+    /* width: min(80%, 1000px); */
+    /* width: 80%; */
 }
 
 .container {
@@ -46,7 +52,6 @@ body {
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
     background-color: white;
-    width: 1000px;
     padding: 20px;
 }
 

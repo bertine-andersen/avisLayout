@@ -1,11 +1,4 @@
-.layout {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 .venstre-aside, .hoyre-aside {
     width: 300px;
@@ -13,7 +6,7 @@
     background-color: aliceblue;
     border-left: 2px solid #ddd;
     position: sticky;
-    top: 20px;
+    top: 0;
     height: 100vh;
     overflow-y: auto;
 }
