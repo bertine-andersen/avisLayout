@@ -7,10 +7,24 @@ const articlesList = document.getElementById('articles-list');
 let lastFetchedDate = new Date();
 let lastFetchedArticles = new Set(); 
 let fetching = false; 
+let loaded = 0;
+let maxLoadingAllowed = 5;
 
 async function fetchArticles() {
     if (fetching) return; 
     fetching = true;
+    if(loaded >= maxLoadingAllowed) {
+        const articleDiv = document.createElement('div');
+        articleDiv.classList.add('article'); 
+        
+        articleDiv.innerHTML = `
+            <h2>Error 404: Rate Limit Reached</h2>
+            <p>You have reached the maximum number of articles that can be loaded at the moment.</p>
+        `;
+
+        articlesList.appendChild(articleDiv);
+        return;
+    }
 
     try {
         
@@ -33,10 +47,11 @@ async function fetchArticles() {
             let articles = data.response.results;
 
             if (articles.length > 0) {
-                // Remove duplicates
+                
                 const newArticles = articles.filter(article => !lastFetchedArticles.has(article.id));
 
                 if (newArticles.length > 0) {
+                    loaded ++;
                     displayArticles(newArticles);
                     newArticles.forEach(article => lastFetchedArticles.add(article.id));
                 }
