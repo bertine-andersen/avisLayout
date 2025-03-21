@@ -13,14 +13,11 @@
             box-sizing: border-box;
         }
 
-        h1 {
-            font-size: 30px;
+        .nav h1 {
             font-weight: 500;
-            font-family: 'Times New Roman', Times, serif;
         }
 
-        h2 {
-            font-size: 30px;
+        .nav h2 {
             font-weight: 800;
         }
 
@@ -29,6 +26,7 @@
             justify-content: space-between;
             align-items: center;
             background-color: #517e49ed;
+            color: white;
             height: 70px;
             padding-left: 20px;
             padding-right: 20px;
@@ -36,15 +34,11 @@
             width: 100%;
             top: 0;
             left: 0;
-        }
-
-        nav div {
-            display: flex;
-            width: 50%;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
         }
 
         a:hover {
-            background-color: #3e5639ed;
             text-decoration-line: underline;
         }
 
@@ -55,9 +49,19 @@
             padding: 0;
         }
 
-        button {
-            font-size: 30px;
+        .nav button {
+            font-size: 24px;
             font-family: 'Times New Roman', Times, serif;
+            border-radius: 15px;
+            background-color: #3e5639ed;
+            border: #3e5639ed;
+            color: white;
+            width: 150px;
+        }
+
+        .nav button:hover {
+            background-color: #9bbd95ed;
+            border: #9bbd95ed;
         }
 
         .meny {
@@ -69,28 +73,36 @@
         .typer {
             display: flex;
             justify-content: flex-start;
-            gap: 8%;
+            gap: 12%;
+            width: 40%;
         }
 
-        .typer {
+        .diverse {
             display: flex;
-            justify-content: flex-start;
-            gap: 8%;
+            justify-content: flex-end;
+            gap: 5%;
+            width: 60%;
         }
 
         .søk {
             background-color: var(--ui-02-c);
             height: 48px;
-            justify-content: space-between;
-            position: relative;
+            display: flex;
+            align-items: center;
             gap: 16px;
             padding: 0 16px;
+        }
+
+        .nav input {
+            height: 100%;
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
         }
     </style>
 </head>
 
 <body>
-    <nav>
+    <nav class="nav">
         <div class="typer">
             <h2><a href=""></a>HP</h2>
             <h1><a href="">AI</a></h1>
@@ -102,6 +114,7 @@
             <button>Abboner</button>
             <button>Logg inn</button>
             <div class="søk">
+                <i class="fa-solid fa-magnifying-glass"></i>
                 <input placeholder="Søk.." type="search" value>
             </div>
             <div class="meny">
