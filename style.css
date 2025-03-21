@@ -70,3 +70,52 @@ article, .article {
 .xlarge {
     grid-column: span 12;
 }
+
+
+
+.innhold {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 40px;
+    padding: 50px;
+    max-width: 900px;
+    margin: auto;
+}
+
+#flatIphone p {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.Overskrift {
+    font-weight: 800;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+#FlatIphone {
+    margin-bottom: 20px;
+}
+
+.Underoverskrift {
+
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 20px;
+
+}
+
+.textboks {
+    max-width: 700px;
+
+}
+
+.dark{
+    background-color: rgb(27, 27, 37);
+}
