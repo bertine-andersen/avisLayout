@@ -85,7 +85,7 @@ article, .article {
     margin: auto;
 }
 
-.Atekst {
+#flatIphone p {
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 20px;
@@ -114,4 +114,8 @@ article, .article {
 .textboks {
     max-width: 700px;
 
+}
+
+.dark{
+    background-color: rgb(27, 27, 37);
 }
