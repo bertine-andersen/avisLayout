@@ -103,3 +103,20 @@ articlesContainer.addEventListener('scroll', () => {
         fetchArticles();
     }
 });
+
+function klikk() {
+    const dropdownEl = document.querySelector(".dropdown-content");
+    const menyIcon = document.querySelector(".meny i");
+
+    dropdownEl.classList.toggle("show");
+    menyIcon.classList.toggle("open");
+}
+
+document.addEventListener("click", function (event) {
+    const dropdownEl = document.querySelector(".dropdown-content");
+    const menyButton = document.querySelector(".meny");
+
+    if (!menyButton.contains(event.target) && !dropdownEl.contains(event.target)) {
+        dropdownEl.classList.remove("show");
+    }
+});
