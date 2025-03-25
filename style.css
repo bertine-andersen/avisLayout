@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --blue-darkest: #0a192f;  /* Svært mørk blå */
+    --blue-darker: #112240;   /* Dyp marineblå */
+    --blue-dark: #1b2b4b;     /* Mørk blå med litt grå */
+    --blue-medium: #233554;   /* Klassisk mørkeblå */
+    --blue-muted: #2c3e50;    /* Litt dempet mørk blå */
+    --blue-accent: #1e3a8a;   /* Kontrastfarge – kongeblå */
+    --blue-hover: #3b5998;    /* Lighter mørkeblå for hover-effekter */
+}
+
 .articles-container {
     /* width: 1000px; */
     overflow-x: auto;
@@ -40,6 +50,7 @@ body {
     justify-content: center;
     background-color: whitesmoke;
     height: 100vh;
+    padding-top: 70px;
 }
 
 main {
@@ -99,7 +110,7 @@ article,
     margin: auto;
 }
 
-#flatIphone p {
+#artikkel_b p {
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 20px;
@@ -113,7 +124,7 @@ article,
 
 
 
-#FlatIphone {
+#a_bilde {
     margin-bottom: 20px;
 }
 
@@ -143,20 +154,21 @@ article,
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #517e49ed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--blue-dark);
     color: white;
     height: 70px;
     padding-left: 25px;
     padding-right: 25px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
     font-size: 22px;
     font-family: 'Times New Roman', Times, serif;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav a:hover {
@@ -174,17 +186,17 @@ nav {
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
     border-radius: 15px;
-    background-color: #3e5639ed;
-    border: #3e5639ed;
     color: white;
     width: 150px;
     padding: 10px;
     cursor: pointer;
+    background-color: var(--blue-accent);
+    border: var(--blue-accent);
 }
 
 .nav button:hover {
-    background-color: #9bbd95ed;
-    border: #9bbd95ed;
+    background-color: var(--blue-hover);
+    border: var(--blue-hover);
 }
 
 .meny {
