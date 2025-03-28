@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,43 +15,137 @@
         }
 
         .loggInn {
-            border: 1px solid gray;
+            border: 3px solid var(--blue-darkest);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
             width: 400px;
             height: 60vh;
+            background-color: var(--blue-accent);
+            color: white;
+            border-radius: 7px;
+        }
+
+        .loggInn h2 {
+            font-size: 26px;
+        }
+
+        .loggInn a {
+            text-decoration: none;
+            color: #fbff00;
+        }
+
+        .input {
+            width: 100%;
+            max-width: 300px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .input input {
+            width: 100%;
+            padding: 10px 40px 10px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .input i {
+            font-size: 24px;
+            padding-right: 5px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .overskrift {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .overskrift i {
+            font-size: 28px;
+            padding-right: 8px;
+        }
+
+        .loggInn button {
+            font-size: 26px;
+            padding: 5px;
+            width: 75%;
+            border-radius: 10px;
+            background-color: white;
+            font-family: 'Times New Roman', Times, serif;
+            border: 0;
+        }
+
+        .loggInn button:hover {
+            background-color: var(--blue-darkest);
+            color: white;
+        }
+
+        .slutt {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 26px;
+        }
+
+        .slutt i {
+            padding-top: 4px;
+        }
+
+        .facebook {
+            padding-right: 5px;
+        }
+
+        .instagram {
+            padding-left: 5px;
         }
     </style>
 </head>
+
 <body class="lgBody">
     <main>
         <div class="loggInn">
-            <h1>Lynraske nyheter</h1>  
+            <div class="overskrift">
+                <i class="fa-solid fa-bolt logo" style="color: #fbff00;"></i>
+                <h1>Lynraske nyheter</h1>
+            </div>
+
             <h2>Logg inn</h2>
             <p>Ny her? <a href="">Registrer ny bruker</a></p>
-            
-            <div>
-                <i class=""></i>
-                <p>E-post</p>
+
+            <div class="input">
+                <i class="fa-regular fa-envelope" style="color: #b8b8b8;"></i>
+                <input class="input" placeholder="E-post">
             </div>
-            <div>
-                <i class=""></i>
-                <p>Passord</p>
+            <div class="input">
+                <i class="fa-solid fa-lock" style="color: #b8b8b8;"></i>
+                <input class="input" placeholder="Passord">
             </div>
+
             <p><a href="">Glemt passord?</a></p>
 
-            <div>
-                <h1>Logg inn</h1>
-            </div>
-            <div>
+            <button>Logg inn</button>
+
+            <div class="slutt">
                 <h2>Eller fortsett med:</h2>
-                <i class=""></i>
+                <div class="ikon">
+                    <i class="fa-brands fa-square-facebook facebook" style="color: #b8b8b8;"></i><i
+                        class="fa-brands fa-instagram instagram" style="color: #b8b8b8;"></i>
+                </div>
             </div>
         </div>
     </main>
 
     <script src="../script.js"></script>
-</body>                                                                                                                      
+</body>
+
 </html>
