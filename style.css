@@ -320,8 +320,9 @@ nav {
 .venstre-aside, .hoyre-aside {
     width: 300px;
     padding: 20px;
-    background-color: aliceblue;
+    background-color: whitesmoke;
     border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
     position: sticky;
     top: 0;
     overflow-y: auto;
@@ -362,3 +363,4 @@ nav {
     color: black;
 }
 
+/* Reklame style avsluttes */
