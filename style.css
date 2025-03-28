@@ -293,14 +293,14 @@ nav {
     top: 60px;
     border-radius: 8px;
     padding: 10px;
-    opacity: 0;
+    display: none;
     transform: translateY(-10px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     z-index: 1000;
 }
 
 .dropdown-content.show {
-    opacity: 1;
+    display: block;
     transform: translateY(0);
 }
 
