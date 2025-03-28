@@ -17,7 +17,6 @@
     --blue-hover: #3b5998;    /* Lighter mørkeblå for hover-effekter */
 }
 
-
 /*avis overskrift styling*/
 .navn-avis {
     background-color: #0a192f;
@@ -241,6 +240,7 @@ nav {
     cursor: pointer;
     background-color: var(--blue-accent);
     border: var(--blue-accent);
+    font-family: "Roboto", sans-serif;
 }
 
 .nav button:hover {
@@ -467,7 +467,7 @@ a:hover {
     width: 75%;
     border-radius: 10px;
     background-color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Roboto", sans-serif;
     border: 0;
 }
 
@@ -516,6 +516,38 @@ a:hover {
         margin: 0 auto;
         gap: 50px;
 
+    }
+}
+
+@media(max-width: 1055px) {
+    .typer h1{
+        display: none;
+    }
+
+    .typer {
+        width: 20%;
+    }
+}
+
+@media(max-width: 590px) {
+    .diverse button{
+        display: none;
+    }
+    
+    .søk {
+        width: 11%;
+    }
+
+    .typer {
+        width: auto;
+    }
+
+    .diverse {
+        width: auto;
+    }
+
+    .dropdown-content .søk {
+        width: 100%;
     }
 }
 
