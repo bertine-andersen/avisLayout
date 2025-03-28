@@ -380,6 +380,10 @@ nav {
     .container {
         display: flex;
         flex-direction: column;
+        text-align: center;
+        width: 75%;
+        margin: 0 auto;
+        gap: 50px;
 
     }
 }
