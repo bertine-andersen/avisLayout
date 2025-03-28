@@ -317,6 +317,26 @@ nav {
 
 /* Her kommer styling til selve reklamene på siden*/
 
+.venstre-aside, .hoyre-aside {
+    width: 300px;
+    padding: 20px;
+    background-color: aliceblue;
+    border-left: 2px solid #ddd;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
+
+.reklame {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 .reklame img {
     max-width: 100%;
     border-radius: 5px;

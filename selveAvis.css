@@ -7,7 +7,7 @@
     border-left: 2px solid #ddd;
     position: sticky;
     top: 0;
-    height: 100vh;
+
     overflow-y: auto;
 }
 
