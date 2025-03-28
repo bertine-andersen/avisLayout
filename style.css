@@ -327,9 +327,9 @@ nav {
 .venstre-aside, .hoyre-aside {
     width: 300px;
     padding: 20px;
-    background-color: whitesmoke;
-    border-left: 2px solid #ddd;
-    border-right: 2px solid #ddd;
+    background-color: #050d1a;
+    border-left: 2px solid #050d1a;
+    border-right: 2px solid #050d1a;
     position: sticky;
     top: 0;
     overflow-y: auto;
