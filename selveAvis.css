@@ -7,7 +7,7 @@
     border-left: 2px solid #050d1a;
     position: sticky;
     top: 0;
-    height: 100vh;
+
     overflow-y: auto;
 }
 
@@ -39,5 +39,9 @@
 .reklame p {
     font-size: 14px;
     color: #555;
+}
+
+.reklame > a{
+    text-decoration: none;
 }
 
