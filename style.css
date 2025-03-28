@@ -371,3 +371,17 @@ nav {
 }
 
 /* Reklame style avsluttes */
+
+/* skjermstørrelse styling*/
+@media(max-width: 1350px) {
+    .venstre-aside, .hoyre-aside {
+        display: none;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+/* skjermstørrelsestylig avsluttes */
