@@ -17,6 +17,23 @@
     --blue-hover: #3b5998;    /* Lighter mørkeblå for hover-effekter */
 }
 
+
+/*avis overskrift styling*/
+.navn-avis {
+    background-color: #0a192f;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.avis-overskrift {
+    color: yellow;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* avis overskrift styling avsluttes*/
+
+
 .articles-container {
     /* width: 1000px; */
     background-color: #0a192f;
